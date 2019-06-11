@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPDATED|Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--Header-->
+	<ul class="topnav">
+  		<h2>UPDATED</h2>
+  		<li>
+  			<a  href="signup.html" >Register</a>
+  		</li>
+  		<li><a href="#" onclick="openForm()" >Login</a>
+  			<div class="form-popup" id="myForm2">
+  					<form class="form-container">
+
+    				<label for="email"><b>Email</b></label><br>
+    				<input type="text" placeholder="email" required>
+
+    				<label for="psw"><b>Password</b></label><br>
+    				<input type="password" placeholder="Enter Password" required>
+
+    				<button type="submit" class="btn">Login</button>
+    				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  					</form>
+  					<script>
+						function openForm() {
+  							document.getElementById("myForm2").style.display = "block";
+						}
+
+						function closeForm() {
+  							document.getElementById("myForm2").style.display = "none";
+						}
+					</script>
+				</div>
+  		</li>
+  		<input type="text" placeholder="Search.."  >
+	</ul>
+
+	<!--Navbar-->
+	<ul class="nav" >
+		<li><a href="index.html">Home</a></li>
+		<li><a href="international.html">International</a></li>
+		<li><a href="politics.html">Politics</a></li>
+		<li><a href="sports.html">Sports</a></li>
+	</ul>
+	<h1 style="font-style: italic;text-align: center;font-weight: bolder;" >SIGNUP</h1>
+	<div id="signup" >
+		<form>
+			<input type="text" name="Name"  placeholder="Name" required="true"><br>
+
+        	<input type="text" name="Email"  placeholder="Email" required="true" ><br>
+
+            <input type="text" name="Password" placeholder="Password" required="true" ><br>
+
+            <input type="text" name="Password" placeholder="Re-enter Password" required="true" ><br>
+
+            <input type="text" name="Contact" placeholder="Contact" required="true" ><br>
+
+           	<input type="text" name="City"  placeholder="City" required="true" ><br>
+
+          	<input type="text" name="Address" placeholder="Address" required="true" ><br>
+
+            <input type="submit" value="Submit" >
+		</form>
+	</div>
+	<footer>
+      <h3 align="center">"Copyright &copy; Updated. All Rights Reserved | Contact Us: +91 90000 00000"</h3>
+  </footer>
+
+</body>
+</html>
