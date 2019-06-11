@@ -1,2 +1,2 @@
-# mobile_billing
-A simple website to find out the data charges.Javascript used
+#new_website
+A news website (front end) built using HTML and CSS
