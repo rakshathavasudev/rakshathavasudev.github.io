@@ -1,2 +1,2 @@
-#new_website
-A news website (front end) built using HTML and CSS
+A Portfolio Website.
+Built using HTML,CSS and Bootstrap
