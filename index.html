@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/projects-carousel.css" />
 
 	</head>
 	<body class="is-preload">
@@ -35,6 +36,13 @@
 			<section id="one" class="main style1">
 				<div class="container">
 					<div class="row gtr-150">
+						<div class="col-12 col-12-medium">
+							<header class="major">
+								<h2>Software Developer Intern, Smote — New York<br /></h2>
+							</header>
+							<p>Built a real-time lecture capture platform for 50+ concurrent users with automated AI note-taking (~95% accuracy).
+								Engineered RLS-backed session management and WebSocket sync to cut redundant storage 30%, and delivered collaborative AI Q&amp;A tutoring with 82% positive feedback.</p>
+						</div>
 						<div class="col-12 col-12-medium">
 							<header class="major">
 								<h2>Research Aide at University at Buffalo<br /></h2>
@@ -79,45 +87,75 @@
 			<section id="two" class="main style2">
 				<div class="container">
 					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-bug"></span></li>
-								<li><span class="icon solid style3 major fa-cloud"></span></li>
-								<li><span class="icon solid style4 major fa-database"></span></li>
-								<li><span class="icon solid style5 major fa-desktop"></span></li>
-								<li><span class="icon solid style6 major fa-terminal"></span></li>
-								<li><span class="icon solid style6 major fa-chart-line"></span></li>
-								<li><span class="icon solid style6 major fa-code-branch"></span></li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
+						<div class="col-12 col-12-medium">
 							<header class="major">
 								<h2>Projects and Brainchildren</h2>
 							</header>
-							<p> InsightBot
-								• Implemented a multi-layered RAG-based chatbot at UBHacking to query YouTube playlists. The video transcripts were fetched
-								via YoutubeTranscriptsAPI, utilizing PineCone for vector storage and Llama LLM for generating contextual response.</p>
-							<p> Epidemic outbreak study using Sentiment Analysis and Predictive Modelling<br/>
-								• Performed sentiment analysis and classification on COVID-19 twitter dataset with BERT to demonstrate the enhanced
-								contextual representation achieving a model accuracy of 95%.<br/>
-								• Devised a deep learning ensemble model trained using the stacked result set of predictions from TensorFlow’s CNN, LSTM
-								and MLP to forecast COVID-19 cases resulting in a robust model with an average r2-score of 0.98.</p>	
-						    
-							<p>PlagiaScan
-								• Orchestrated a data structures and algorithm project to determine percentage plagiarism of a text document with an accuracy
-								of 92% using the Rabin Karp algorithm and rolling hash data structure for string pattern matching.
-							</p>
-						    <p> GeoMapper
-								• Developed a GIS-based web application using Leaflet to visualize and analyze spatial data, incorporating file upload functionality
-								to process and display GeoJSON datasets.
-							</p>
-						    <p>  PhishNet
-								• Pre-processed over 5 lakh URL records and extracted relevant features to train machine learning models in Pyspark for phishing
-								URL detection.Developed and deployed the solution as a web extension powered by a Flask server.</p>
-							
-						
-						
+							<div class="projects-carousel" aria-label="Projects carousel">
+								<button class="carousel-button prev" aria-label="Previous">
+									<i class="fas fa-chevron-left"></i>
+								</button>
+								<div class="carousel-viewport">
+									<ul class="carousel-track">
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-comments"></i></div>
+											<h3>InsightBot</h3>
+											<p>RAG chatbot that answers questions over YouTube playlists with context‑aware responses and fast retrieval.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://github.com/rakshathavasudev/InSightBot">View repo</a></p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-chart-line"></i></div>
+											<h3>Epidemic Outbreak Study</h3>
+											<p>Analyzed global COVID‑19 tweets with BERT, then forecast cases using a robust CNN/LSTM/MLP ensemble.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://www.springerprofessional.de/sentiment-analysis-on-worldwide-covid-19-outbreak/26376070">Springer</a> · <a target="_blank" href="https://ieeexplore.ieee.org/document/10054258">IEEE</a></p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-copy"></i></div>
+											<h3>PlagiaScan</h3>
+											<p>Rabin–Karp rolling‑hash plagiarism detector achieving ~92% accuracy on real‑world documents.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://github.com/rakshathavasudev/PlagiarismDetector">View repo</a></p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-map-marked-alt"></i></div>
+											<h3>GeoMapper</h3>
+											<p>Interactive GIS tool to upload, process, and visualize GeoJSON—ideal for quick spatial analysis.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://github.com/rakshathavasudev/simple_gis_app">View repo</a></p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+											<h3>PhishNet</h3>
+											<p>Processed 500k+ URLs to train ML models for phishing detection; shipped as a browser extension.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://github.com/rakshathavasudev/phishing_url_flask_app">View repo</a></p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-hard-hat"></i></div>
+											<h3>EHS Consulting Network</h3>
+											<p>Scalable marketplace connecting businesses with safety consultants. Responsive UI, fast search, and secure deployment.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://ehsconsultingnetwork.xyz/">Visit platform</a></p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-microchip"></i></div>
+											<h3>PintOS Kernel Enhancements</h3>
+											<p>Implemented thread scheduling, system calls, and virtual memory. Strengthened synchronization and user–kernel transitions for robust isolation.</p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-brain"></i></div>
+											<h3>MRI Tumor Classification & Seg.</h3>
+											<p>Classifies and segments brain tumors on MRI; GAN super‑resolution boosts detail; UNet enables precise masks. Benchmarked with PSNR, SSIM, DICE; 82% baseline accuracy.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://github.com/rakshathavasudev/BrainTumourClassification">View repo</a></p>
+										</li>
+										<li class="project-card">
+											<div class="project-icon"><i class="fas fa-store"></i></div>
+											<h3>BoutiqueAI</h3>
+											<p>Full‑stack e‑commerce with personalized recommendations that improve discovery and conversions; BoW–Cosine engine served via Flask.</p>
+											<p class="project-link"><i class="fas fa-link"></i> <a target="_blank" href="https://github.com/rakshathavasudev/BoutiqueWebsitewithRecommendations">View repo</a></p>
+										</li>
+									</ul>
+								</div>
+								<button class="carousel-button next" aria-label="Next">
+									<i class="fas fa-chevron-right"></i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -210,6 +248,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/projects-carousel.js"></script>
 
 	</body>
 </html>

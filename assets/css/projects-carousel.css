@@ -1,0 +1,116 @@
+.projects-carousel {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.projects-carousel .carousel-button {
+	background: rgba(255,255,255,0.6);
+	border: 1px solid rgba(144,144,144,0.35);
+	border-radius: 999px;
+	color: #555;
+	cursor: pointer;
+	padding: 0.5rem;
+	width: 2.25rem;
+	height: 2.25rem;
+	display: grid;
+	place-items: center;
+	font-size: 1.1rem;
+	line-height: 1;
+	transition: background 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.projects-carousel .carousel-button:hover {
+	color: #fff;
+	background: #6bd4c8;
+	border-color: #6bd4c8;
+	box-shadow: 0 6px 16px rgba(107,212,200,0.35);
+}
+
+.projects-carousel .carousel-viewport {
+	overflow: hidden;
+	width: 100%;
+}
+
+
+.projects-carousel .carousel-track {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: calc((100% - 2rem) / 3);
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	transition: transform 500ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.projects-carousel .project-card {
+	background: rgba(255,255,255,0.9);
+	border: 1px solid rgba(144,144,144,0.25);
+	border-radius: 10px;
+	padding: 1.25rem 1.15rem 1.35rem;
+	text-align: center;
+	min-height: 190px;
+	box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+	transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.projects-carousel .project-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 10px 24px rgba(0,0,0,0.1);
+	border-color: rgba(144,144,144,0.4);
+}
+
+.projects-carousel .project-card h3 {
+	margin: 0 0 0.5rem 0;
+	font-weight: 600;
+	color: #555;
+}
+
+.projects-carousel .project-card p {
+	font-weight: 400;
+	color: #666;
+	margin-bottom: 0.75rem;
+}
+
+.projects-carousel .project-icon {
+	color: #fff;
+	background: linear-gradient(135deg, #6bd4c8, #4fb1a7);
+	font-size: 1.1rem;
+	margin: 0 auto 0.75rem auto;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 999px;
+	display: grid;
+	place-items: center;
+	box-shadow: 0 6px 16px rgba(107,212,200,0.35);
+}
+
+.projects-carousel .project-link {
+	margin-top: 0.35rem;
+	font-weight: 600;
+}
+
+.projects-carousel .project-link i {
+	color: #6bd4c8;
+	margin-right: 0.35rem;
+}
+
+.projects-carousel .project-link a {
+	border-bottom: dotted 1px #6bd4c8;
+}
+
+@media screen and (max-width: 1140px) {
+	.projects-carousel .carousel-track {
+		grid-auto-columns: calc((100% - 1rem) / 2);
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.projects-carousel .carousel-track {
+		grid-auto-columns: 100%;
+	}
+}
+
+
